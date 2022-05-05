@@ -52,7 +52,15 @@ crazyDiff(22)
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
 */
 
-/* WRITE YOUR ANSWER HERE */
+function boundary(n) {
+    if (n >= 20 && n <= 100 || n === 400) {
+        console.log(true)
+    } else {
+        console.log(false)
+    }
+}
+
+boundary(200)
 
 /* EXERCISE 5
  Write a function called "strivify" which accepts a string as a parameter.

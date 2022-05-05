@@ -133,8 +133,14 @@ cutString("Epicode")
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
+let newArray = []
+function giveMeRandom(n) {
+    for (i = 0; i < n; i++)
+        newArray.push(Math.floor(Math.random() * 10))
+    console.log(newArray)
+}
 
-/* WRITE YOUR ANSWER HERE */
+giveMeRandom(9)
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.

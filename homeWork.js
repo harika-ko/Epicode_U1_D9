@@ -82,7 +82,16 @@ strivify("Striveschool")
  HINT: Modulus Operator
 */
 
-/* WRITE YOUR ANSWER HERE */
+function check3and7(num) {
+    if (num > 0 && num % 3 === 0) {
+        console.log("The number is a multiple of 3")
+    } else if (num > 0 && num % 7 === 0) {
+        console.log("The number is a multiple of 7")
+    } else
+        console.log("Enter a valid number")
+}
+
+check3and7(30)
 
 /* EXERCISE 7
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).

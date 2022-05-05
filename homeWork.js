@@ -110,7 +110,15 @@ reverseString("Epicode")
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
 
-/* WRITE YOUR ANSWER HERE */
+function upperFirst(str1) {
+    let splitStr = str1.toLowerCase().split(' ')
+    for (let i = 0; i < splitStr.length; i++) {
+        splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1)
+    }
+    return splitStr.join(' ')
+}
+
+console.log(upperFirst("hello is my name"))
 
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.

@@ -70,16 +70,32 @@ addToShoppingCart()
  Create a function called "maxShoppingCart" which receives the shoppingCart array and returns the most expensive item in it.
 */
 
-function maxShoppingCart() {
-
+function maxShoppingCart(shoppingCart) {
+    let max = shoppingCart[0].price
+    for (i = 1; i < shoppingCart.length; i++) {
+        if (shoppingCart[i].price > max) {
+            max = shoppingCart[i].price
+        }
+    }
+    return max
 }
+
+console.log("The most expensive item costs", maxShoppingCart(shoppingCart))
 
 /* EXTRA 5
  In your eCommerce you have an array of objects called shoppingCart. Each one of these objects has a price, a name, an id and the quantity to be shipped.
  Create a function called "latestShoppingCart" which receives the shoppingCart array and returns the last item.
 */
 
-/* WRITE YOUR ANSWER HERE */
+function latestShoppingCart(shoppingCart) {
+    for (i = 0; i < shoppingCart.length; i++) {
+        let lastItem = shoppingCart[shoppingCart.length - 1]
+        return lastItem
+    }
+
+}
+
+console.log("The last item in the array is", latestShoppingCart(shoppingCart))
 
 /* EXTRA 6
  Create a function called "loopUntil" which receives an integer x between 0 and 9 as a parameter.

@@ -146,7 +146,15 @@ longest(strarr)
  The function should return true if the emailContent string does not contain the words SPAM or SCAM.
 */
 
-/* WRITE YOUR ANSWER HERE */
+function emailContent(email) {
+    if (email.includes("SPAM") || email.includes("SCAM")) {
+        return false
+    } else {
+        return true
+    }
+}
+
+console.log(emailContent("this is SCAM "))
 
 /* EXTRA 10
  Write a function that receives a date as a parameter and calculates the number of days passed since the given date.

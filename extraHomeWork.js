@@ -160,7 +160,14 @@ console.log(emailContent("this is SCAM "))
  Write a function that receives a date as a parameter and calculates the number of days passed since the given date.
 */
 
-/* WRITE YOUR ANSWER HERE */
+function numberOfDays(date) {
+    let today = new Date();
+    let difference = today - date;
+    return Math.floor(difference / (1000 * 60 * 60 * 24));
+};
+
+console.log(numberOfDays(new Date("2022-01-18")));
+
 
 /* EXTRA 11
  Write a function called "matrixGenerator" which receives two integers, x and y, as parameters.

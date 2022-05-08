@@ -13,7 +13,7 @@ ASSIGNMENT RULES
 */
 
 function area(l1, l2) {
-    console.log(l1 * l2)
+    console.log("The area of Rectangle is", l1 * l2)
 }
 
 area(2, 8)
@@ -85,7 +85,8 @@ strivify("Striveschool")
 function check3and7(num) {
     if (num > 0 && num % 3 === 0) {
         console.log("The number is a multiple of 3")
-    } else if (num > 0 && num % 7 === 0) {
+    }
+    if (num > 0 && num % 7 === 0) {
         console.log("The number is a multiple of 7")
     } else
         console.log("Enter a valid number")

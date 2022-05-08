@@ -102,13 +102,24 @@ console.log("The last item in the array is", latestShoppingCart(shoppingCart))
  The function loops and prints a random number between 0 and 9 until the random number is bigger than x for three times in a row.
 */
 
-/* WRITE YOUR ANSWER HERE */
-
 /* EXTRA 7
  Write a function called "average" which receives an array and returns the average numerical value. The function automatically skips non-numeric entries in the array.
 */
 
-/* WRITE YOUR ANSWER HERE */
+let arr = [32, 44, 13, "Hello", 76, "Epicode", 74]
+function average(arr) {
+    let sum = 0
+    let avg = 0
+    for (i = 0; i < arr.length; i++) {
+        if (typeof arr[i] === "number") {
+            sum = sum + arr[i]
+            avg = sum / 2
+        }
+    }
+    return avg
+}
+
+console.log(average(arr))
 
 /* EXTRA 8
  Write a function called "longest" to find the longest string from a given array of strings.

@@ -125,7 +125,21 @@ console.log(average(arr))
  Write a function called "longest" to find the longest string from a given array of strings.
 */
 
-/* WRITE YOUR ANSWER HERE */
+let strarr = ["Hello", "Epicode", "Students", "Welcome", "to", "Javascript"]
+
+function longest(strarr) {
+    let max = strarr[0].length
+    let word
+    for (let i = 1; i < strarr.length; i++) {
+        if (strarr[i].length > max) {
+            max = strarr[i].length
+            word = strarr[i]
+        }
+    }
+    console.log("The maximum string length in the array is", max, "and the word is", word)
+}
+
+longest(strarr)
 
 /* EXTRA 9
  Write a function to create a very simple anti spam filter for your mailbox. The function takes a string emailContent, and returns a boolean.
